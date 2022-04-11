@@ -1,0 +1,16 @@
+{
+  "name": "movieflix",
+  "version": "1.0.0",
+  "description": "A movie search application",
+  "main": "default.js",
+  "scripts": {
+    "sass:dev": "sass -w ./src/sass/master.scss ./src/css/style.css",
+    "start": "parcel index.html"
+  },
+  "author": "Oluwabi Ahmed (Hamlanreh)",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.4.1",
+    "sass": "^1.49.11"
+  }
+}

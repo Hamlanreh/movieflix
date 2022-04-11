@@ -1,0 +1,79 @@
+.card {
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 15.5rem));
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+  }
+
+  &__item {
+    background-color: var(--color-black);
+    height: 20rem;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (min-width: 800px) {
+      &:focus,
+      &:hover {
+        & .card__image {
+          transform: scale(1.15);
+          -webkit-filter: blur(2px);
+          -moz-filter: blur(2px);
+          filter: blur(2px);
+        }
+
+        & .card__icon {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: all 0.2s ease;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 1000;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-white);
+
+    @media screen and (min-width: 800px) {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &__content {
+    background-color: var(--color-black-light);
+    color: var(--color-white);
+    width: 100%;
+    min-height: 4rem;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    position: absolute;
+    top: 45%;
+    font-size: 1.2rem;
+    z-index: 1000;
+  }
+
+  &__link {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+}

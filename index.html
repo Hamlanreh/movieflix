@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./src/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script defer type="module" src="./src/js/controller.js"></script>
+    <title>MovieFlix - Application for movies data and plot</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header-box">
+          <div class="header__logo-box">
+            <img src="./src/img/logo.png" alt="" class="header__logo" />
+          </div>
+          <a class="header__logo-link" href="./">MovieFlix</a>
+        </div>
+        <form class="search__form">
+          <input type="search" class="search__movie" placeholder="Movie" />
+          <input type="number" class="search__year" placeholder="Year" />
+          <button class="btn search__btn">
+            <svg class="search__icon">
+              <use xlink:href="./src/img/icons/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+      </header>
+
+      <main class="movies">
+        <h2 class="heading--2">
+          Movies: <span class="movies__heading movies__data">Popular</span>
+        </h2>
+        <ul class="movie__list card__list"></ul>
+        <div class="pagination">
+          <button class="pagination__prev">&LeftArrow; Previous</button>
+          <button class="pagination__next">Next &RightArrow;</button>
+        </div>
+      </main>
+
+      <main class="movie"></main>
+
+      <section class="favourites">
+        <h2 class="heading--2">
+          Movies: <span class="movies__heading">Favourites</span>
+        </h2>
+        <ul class="favourite__list card__list"></ul>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__item gallery__item--1">
+          <h2 class="gallery__title">Action</h2>
+        </div>
+        <div class="gallery__item gallery__item--2">
+          <h2 class="gallery__title">Drama</h2>
+        </div>
+        <div class="gallery__item gallery__item--3">
+          <h2 class="gallery__title">Comedy</h2>
+        </div>
+        <div class="gallery__item gallery__item--4">
+          <h2 class="gallery__title">Horror</h2>
+        </div>
+        <div class="gallery__item gallery__item--5">
+          <h2 class="gallery__title">Thriller</h2>
+        </div>
+        <div class="gallery__item gallery__item--6">
+          <h2 class="gallery__title">Sci-fi</h2>
+        </div>
+        <div class="gallery__item gallery__item--7">
+          <h2 class="gallery__title">Romance</h2>
+        </div>
+        <div class="gallery__item gallery__item--8">
+          <h2 class="gallery__title">Crime</h2>
+        </div>
+        <div class="gallery__item gallery__item--9">
+          <h2 class="gallery__title">Adventure</h2>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="media">
+          <a
+            class="media__link"
+            target="_blank"
+            href="https://twitter.com/hamlanreh"
+          >
+            <svg class="media__icon">
+              <use xlink:href="./src/img/icons/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a
+            class="media__link"
+            target="_blank"
+            href="https://www.youtube.com/channel/UCZl4sLl3ux5bNqJw7Ec2pdg"
+          >
+            <svg class="media__icon">
+              <use xlink:href="./src/img/icons/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a
+            class="media__link"
+            target="_blank"
+            href="https://www.linkedin.com/in/ahmed-oluwabi-748844232"
+          >
+            <svg class="media__icon">
+              <use xlink:href="./src/img/icons/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+          <a
+            class="media__link"
+            target="_blank"
+            href="https://wa.me/+2347084345275"
+          >
+            <svg class="media__icon">
+              <use xlink:href="./src/img/icons/sprite.svg#icon-whatsapp"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="copyright">
+          <p class="paragraph">
+            Movieflix - copyright &copy; 2022 Oluwabi Ahmed AKA (HAMLANREH). All
+            right reserved and this website should only be used for learning and
+            non-commercial purposes.
+          </p>
+        </div>
+      </footer>
+
+      <section class="modal">
+        <article class="modal__content">
+          <div class="modal__header">
+            <h2 class="modal__heading">Error</h2>
+            <button class="modal__close">&times;</button>
+          </div>
+          <div class="modal__message-box">
+            <img
+              src="./src/img/error.png"
+              alt="Error icon"
+              class="modal__icon"
+            />
+            <p class="modal__message"></p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

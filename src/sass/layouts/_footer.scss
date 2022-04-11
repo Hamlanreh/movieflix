@@ -1,0 +1,38 @@
+.footer {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 2rem;
+
+  background-color: rgba(7, 11, 12, 0.95);
+  color: var(--color-white);
+}
+
+.media {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 2rem;
+    transition: all 0.2s ease;
+  }
+
+  &__link:hover &__icon {
+    transform: scale(0.9);
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-white);
+  }
+}
+
+.copyright {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+}

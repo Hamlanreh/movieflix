@@ -1,0 +1,9 @@
+.spinner {
+  display: block;
+  margin: 10rem auto;
+  width: 25rem;
+  height: 25rem;
+  fill: var(--color-white);
+
+  animation: rotateInCircle 2s ease infinite;
+}

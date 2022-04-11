@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  // Desktop
+  @media screen and (min-width: 144em) {
+    font-size: 75%;
+  }
+
+  // Laptop
+  @media screen and (max-width: 102.4em) {
+    font-size: 56.25%;
+  }
+
+  // Tablet
+  @media screen and (max-width: 76.8em) {
+    font-size: 50%;
+  }
+
+  // Phone
+  @media screen and (max-width: 42.5em) {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-black);
+}
