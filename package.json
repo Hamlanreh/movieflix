@@ -5,7 +5,8 @@
   "main": "default.js",
   "scripts": {
     "sass:dev": "sass -w ./src/sass/master.scss ./src/css/style.css",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Oluwabi Ahmed (Hamlanreh)",
   "license": "ISC",
