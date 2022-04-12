@@ -1,8 +1,7 @@
 {
   "name": "movieflix",
   "version": "1.0.0",
-  "description": "A movie search application",
-  "main": "default.js",
+  "description": "A movie information search application",
   "scripts": {
     "sass:dev": "sass -w ./src/sass/master.scss ./src/css/style.css",
     "start": "parcel index.html",
