@@ -17,7 +17,7 @@ const controlPopularMovies = async function () {
     // Render popular movies
     movieView.renderMovies(popularMovies);
   } catch (err) {
-    modalView.renderMessage(`${err}`);
+    modalView.renderError(`${err}`);
   }
 };
 

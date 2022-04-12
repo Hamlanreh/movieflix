@@ -13,65 +13,110 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-blend-mode: soft-light;
 
     &:hover {
       background-size: 140%;
     }
 
     &--1 {
-      background-image: url('../img/action.jpg');
+      background-image: linear-gradient(
+          to top right,
+          rgba(26, 41, 48, 1),
+          rgba(0, 0, 0, 0.85)
+        ),
+        url('../img/action.jpg');
       grid-column: 1 / 3;
       grid-row: 1 / 3;
     }
 
     &--2 {
-      background-image: url('../img/drama.jpg');
+      background-image: linear-gradient(
+          to top right,
+          rgba(26, 41, 48, 1),
+          rgba(0, 0, 0, 0.85)
+        ),
+        url('../img/drama.jpg');
       grid-column: 3 / 5;
       grid-row: 1 / 3;
     }
 
     &--3 {
-      background-image: url('../img/comedy.jpg');
+      background-image: linear-gradient(
+          to top right,
+          rgba(26, 41, 48, 1),
+          rgba(0, 0, 0, 0.85)
+        ),
+        url('../img/comedy.jpg');
       grid-column: 5 / -1;
       grid-row: 1 / 3;
     }
 
     &--4 {
-      background-image: url('../img/horror.jpg');
+      background-image: linear-gradient(
+          to top right,
+          rgba(26, 41, 48, 1),
+          rgba(0, 0, 0, 0.85)
+        ),
+        url('../img/horror.jpg');
       grid-column: 1 / 4;
       grid-row: 3 / 6;
     }
 
     &--5 {
-      background-image: url('../img/thriller.jpg');
+      background-image: linear-gradient(
+          to top right,
+          rgba(26, 41, 48, 1),
+          rgba(0, 0, 0, 0.85)
+        ),
+        url('../img/thriller.jpg');
       grid-column: 4 / 6;
       grid-row: 3 / 6;
     }
 
     &--6 {
-      background-image: url('../img/scifi.jpg');
+      background-image: linear-gradient(
+          to top right,
+          rgba(26, 41, 48, 1),
+          rgba(0, 0, 0, 0.85)
+        ),
+        url('../img/scifi.jpg');
       grid-column: 6 / -1;
       grid-row: 3 / 5;
     }
 
     &--7 {
-      background-image: url('../img/romance.jpg');
+      background-image: linear-gradient(
+          to top right,
+          rgba(26, 41, 48, 1),
+          rgba(0, 0, 0, 0.85)
+        ),
+        url('../img/romance.jpg');
       grid-column: 1 / 3;
       grid-row: 6 / 8;
     }
 
     &--8 {
-      background-image: url('../img/crime.jpg');
+      background-image: linear-gradient(
+          to top right,
+          rgba(26, 41, 48, 1),
+          rgba(0, 0, 0, 0.85)
+        ),
+        url('../img/crime.jpg');
       grid-column: 3 / 6;
       grid-row: 6 / 8;
     }
 
     &--9 {
-      background-image: url('../img/adventure.jpg');
+      background-image: linear-gradient(
+          to top right,
+          rgba(26, 41, 48, 1),
+          rgba(0, 0, 0, 0.85)
+        ),
+        url('../img/adventure.jpg');
       grid-column: 6 / -1;
       grid-row: 5 / 8;
     }
