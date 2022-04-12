@@ -12,7 +12,7 @@ class ModalView {
     this.#modal.style.visibility = 'hidden';
   }
 
-  renderMessage(message) {
+  renderError(message) {
     this.#modalMessage.textContent = `${message}`;
     this.#modal.style.opacity = '1';
     this.#modal.style.visibility = 'visible';

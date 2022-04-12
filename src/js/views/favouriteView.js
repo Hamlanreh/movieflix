@@ -5,14 +5,12 @@ class FavouriteView {
 
   renderMovies(movies) {
     this.#favouriteList.innerHTML = '';
-
     const markup = movies
       .map(movie => {
         const movieMarkup = this._generateMarkup(movie);
         return movieMarkup;
       })
       .join('');
-
     this.#favouriteList.insertAdjacentHTML('beforeend', markup);
   }
 

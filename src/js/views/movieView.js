@@ -12,11 +12,6 @@ class MovieView {
     window.addEventListener('load', handler);
   }
 
-  addHandlerAddFavouriteMovie(handler) {
-    this.#movieList.addEventListener('click', handler);
-    this.#favouriteList.addEventListener('click', handler);
-  }
-
   addHandlerSelectMovies(handler) {
     this.#movieList.addEventListener('click', handler);
   }
@@ -27,6 +22,11 @@ class MovieView {
 
   addHandlerPagination(handler) {
     this.#pagination.addEventListener('click', handler);
+  }
+
+  addHandlerFavouriteMovie(handler) {
+    this.#movieList.addEventListener('click', handler);
+    this.#favouriteList.addEventListener('click', handler);
   }
 
   changeMovieHeading(headingText) {

@@ -10,8 +10,7 @@ class SearchView {
   getQuery() {
     const searchMovieInput = this.#searchMovie.value;
     const searchYearInput = this.#searchYear.value;
-
-    this.clearInputs();
+    this._clearInputs();
 
     return {
       query: searchMovieInput || '',
@@ -19,7 +18,7 @@ class SearchView {
     };
   }
 
-  clearInputs() {
+  _clearInputs() {
     this.#searchMovie.value = this.#searchYear.value = '';
   }
 }

@@ -5,3 +5,4 @@ export const API_MOVIE_URL = 'https://api.themoviedb.org/3/movie/';
 export const API_GENRE_URL = 'https://api.themoviedb.org/3/genre/movie/list?';
 export const API_USER_LOCALE = navigator.language;
 export const API_IMAGE_URL = 'https://image.tmdb.org/t/p/w500/';
+export const API_INCLUDE_ADULT = false;
